@@ -55,12 +55,30 @@ public class Githuburltest {
 		
 		
 		js.executeScript("arguments[0].scrollIntoView();", elemwnt6);
-		driver.findElement(By.xpath("//label[@for='tree-node-office']")).click();
+		System.out.println("is office dispayed" +elemwnt6.isDisplayed());
+		System.out.println("is office ebabled"+elemwnt6.isEnabled());
+		System.out.println(elemwnt6.isSelected());
+		elemwnt6.click();
+		//Thread.sleep(10000);
+		System.out.println(elemwnt6.isSelected());
+
+		//driver.findElement(By.xpath("//label[@for='tree-node-office']")).click();
 		WebElement elemwnt7= driver.findElement(By.xpath("//span[@class='text-success']"));
-		System.out.println(elemwnt7.getText());
+		//System.out.println(elemwnt7);
 		
+		driver.findElement(By.xpath("//div[@class='element-list collapse show']//li[@id='item-2']")).click();
+
+		//.click();
 	
 		
+		WebElement elemwnt8 = driver.findElement(By.xpath("//label[@for='yesRadio']"));
+		
+		
+		js.executeScript("arguments[0].scrollIntoView();", elemwnt8);
+		
+		System.out.println(elemwnt8.isEnabled());
+		elemwnt8.click();
+		System.out.println(elemwnt8.isEnabled());
 	}
 
 }
