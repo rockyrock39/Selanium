@@ -1,2 +1,5 @@
 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
 https://demoqa.com/text-box
+https://devhints.io/xpath
+https://training.github.com/downloads/github-git-cheat-sheet/
+https://demoqa.com/radio-button
