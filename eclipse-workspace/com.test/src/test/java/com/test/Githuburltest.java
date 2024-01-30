@@ -42,10 +42,24 @@ public class Githuburltest {
 		
 		
 		js.executeScript("arguments[0].scrollIntoView();", elemwnt5);
-		driver.findElement(By.xpath("//span[@class='rct-checkbox']")).click();
-
+		//driver.findElement(By.xpath("//span[@class='rct-checkbox']")).click();
+		driver.findElement(By.xpath("//div[@class='check-box-tree-wrapper']/div/div/button[@class='rct-option rct-option-expand-all']")).click();
+		Thread.sleep(10000);
+		
+		//WebElement elemwnt6 = driver.findElement(By.xpath("//ol/li[@class='rct-node rct-node-leaf'][1]/span/label[@for='tree-node-notes']"));
+		
+		//js.executeScript("arguments[0].scrollIntoView();", elemwnt6);
+		driver.findElement(By.xpath("//ol/li[@class='rct-node rct-node-leaf'][1]/span/label[@for='tree-node-notes']")).click();
+		driver.findElement(By.xpath("//label[@for='tree-node-react']")).click();
+		WebElement elemwnt6 = driver.findElement(By.xpath("//label[@for='tree-node-office']"));
 		
 		
+		js.executeScript("arguments[0].scrollIntoView();", elemwnt6);
+		driver.findElement(By.xpath("//label[@for='tree-node-office']")).click();
+		WebElement elemwnt7= driver.findElement(By.xpath("//span[@class='text-success']"));
+		System.out.println(elemwnt7.getText());
+		
+	
 		
 	}
 
