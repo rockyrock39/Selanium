@@ -39,7 +39,7 @@ public class RadioButton {
 
 		WebElement elemwnt9 = driver.findElement(By.xpath("//label[@for='noRadio']"));
 
-		// js.executeScript("arguments[0].scrollIntoView();", elemwnt8);
+		js.executeScript("arguments[0].scrollIntoView();", elemwnt8);
 
 		System.out.println("Radio Button enable" + elemwnt9.isEnabled());
 		elemwnt9.click();
