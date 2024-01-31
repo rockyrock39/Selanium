@@ -31,8 +31,8 @@ public class RadioButton {
 
 		WebElement elemwnt8 = driver.findElement(By.cssSelector("label[for='impressiveRadio']"));
 
-		js.executeScript("arguments[0].scrollIntoView();", elemwnt8);
-
+		//js.executeScript("arguments[0].scrollIntoView();", elemwnt8);
+//hi
 		System.out.println(elemwnt8.isEnabled());
 		elemwnt8.click();
 		System.out.println(elemwnt8.isEnabled());
