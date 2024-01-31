@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -40,9 +41,11 @@ public class Alerts {
 		
 		Alert alrttextbox=driver.switchTo().alert();
 		System.out.println(alrttextbox.getText());
-		Thread.sleep(15000);
+		Thread.sleep(9000);
 		//driver.switchTo().alert().sendKeys("you are doing ok");
+		alrttextbox.sendKeys(Keys.DELETE.toString());
 		alrttextbox.sendKeys("you are doing ok");
+		alrttextbox.accept();
 		//System.out.println(alrtcanok.notify());
 		//alrttextbox.notify();
 		System.out.println("done");
