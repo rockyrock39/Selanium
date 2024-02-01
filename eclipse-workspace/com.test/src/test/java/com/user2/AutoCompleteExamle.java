@@ -17,21 +17,27 @@ public class AutoCompleteExamle {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		driver.get("https://demoqa.com/auto-complete");
+		driver.get("https://www.redbus.in/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		
-		WebElement Element = driver.findElement(By.xpath("//div[@class='auto-complete__control css-yk16xz-control']"));
-		js.executeScript("arguments[0].scrollIntoView();", Element);
-		Element.click();
-		Element.sendKeys("Re");
-		Element.sendKeys(Keys.ARROW_DOWN);
+		driver.findElement(By.id("src")).sendKeys("chennai");
+		//js.executeScript("arguments[0].scrollIntoView();", Element);
+		//Element.click();
+		//Element.sendKeys("chennai");
+		//Element.sendKeys(Keys.ARROW_DOWN);
 		
-		WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='auto-complete__menu css-2313qy-menu']")));
+		WebElement element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//ul[@class='sc-dnqmqq eFEVtU']/li[2]")));
 		
-		//element2.click();
+		element2.click();
 			
+		driver.findElement(By.id("dest")).sendKeys("banglore");
+		
+		WebElement element3 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//ul[@class='sc-dnqmqq eFEVtU']/li[2]")));
+		
+		element3.click();
 		
 	}
 
