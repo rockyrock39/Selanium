@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AutoCompleteExamle {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -23,7 +23,20 @@ public class AutoCompleteExamle {
 		driver.get("https://www.redbus.in/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		
-		driver.findElement(By.id("src")).sendKeys("chennai");
+		driver.findElement(By.id("src")).click();
+		
+		driver.findElement(By.id("src")).sendKeys("c");
+		driver.findElement(By.id("src")).sendKeys("h");
+		driver.findElement(By.id("src")).sendKeys("e");
+		//Thread.slpp
+		driver.findElement(By.id("src")).sendKeys("n");
+		driver.findElement(By.id("src")).sendKeys("n");
+		driver.findElement(By.id("src")).sendKeys("a");
+		driver.findElement(By.id("src")).sendKeys("i");
+		//driver.findElement(By.id("src")).wait(3000);
+
+		driver.findElement(By.id("src")).sendKeys(Keys.SPACE);
+
 		//js.executeScript("arguments[0].scrollIntoView();", Element);
 		//Element.click();
 		//Element.sendKeys("chennai");
@@ -33,7 +46,17 @@ public class AutoCompleteExamle {
 		
 		element2.click();
 			
-		driver.findElement(By.id("dest")).sendKeys("banglore");
+		driver.findElement(By.id("dest")).click();
+		driver.findElement(By.id("dest")).sendKeys("b");
+		driver.findElement(By.id("dest")).sendKeys("a");
+		driver.findElement(By.id("dest")).sendKeys("n");
+		driver.findElement(By.id("dest")).sendKeys("g");
+		//driver.findElement(By.id("src")).wait(3000);
+		driver.findElement(By.id("dest")).sendKeys("l");
+		driver.findElement(By.id("dest")).sendKeys("o");
+		driver.findElement(By.id("dest")).sendKeys("r");
+		driver.findElement(By.id("dest")).sendKeys("e");
+		driver.findElement(By.id("dest")).sendKeys(Keys.SPACE);
 		
 		WebElement element3 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//ul[@class='sc-dnqmqq eFEVtU']/li[2]")));
 		
