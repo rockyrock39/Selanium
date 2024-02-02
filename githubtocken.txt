@@ -8,3 +8,7 @@ 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
 
 
 https://demo.automationtesting.in/Alerts.html
+https://demo.automationtesting.in/Register.html
+https://testng.org/
+
+https://testng.org/testng-eclipse-update-site
