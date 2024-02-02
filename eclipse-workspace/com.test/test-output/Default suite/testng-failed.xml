@@ -6,7 +6,7 @@
       <class name="TestNgExample.RegistrationTesr">
         <methods>
           <include name="OpenBrowser"/>
-          <include name="validatepage"/>
+          <include name="validatename"/>
           <include name="BrowserClose"/>
         </methods>
       </class> <!-- TestNgExample.RegistrationTesr -->
