@@ -13,7 +13,7 @@ public class GroupingTest {
 		public void car1() {
 			System.out.println("Hi test car1");
 		}
-		@Ignore
+
 		@Test(groups = "car")
 		public void car2() {
 			System.out.println("Hi test car2");
