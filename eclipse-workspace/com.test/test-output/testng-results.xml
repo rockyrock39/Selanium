@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-02T07:08:03 GMT" name="Default suite" finished-at="2024-02-02T07:08:08 GMT" duration-ms="4670">
+  <suite started-at="2024-02-05T05:56:50 GMT" name="Grouping" finished-at="2024-02-05T05:57:01 GMT" duration-ms="11649">
     <groups>
+      <group name="car">
+        <method signature="GroupingTest.car1()[pri:0, instance:TestNgExample.GroupingTest@65c7a252]" name="car1" class="TestNgExample.GroupingTest"/>
+        <method signature="GroupingTest.car3()[pri:0, instance:TestNgExample.GroupingTest@65c7a252]" name="car3" class="TestNgExample.GroupingTest"/>
+        <method signature="GroupingTest.sedan()[pri:0, instance:TestNgExample.GroupingTest@65c7a252]" name="sedan" class="TestNgExample.GroupingTest"/>
+      </group> <!-- car -->
+      <group name="3Wheeler">
+        <method signature="GroupingTest.AutoRiksaw()[pri:0, instance:TestNgExample.GroupingTest@65c7a252]" name="AutoRiksaw" class="TestNgExample.GroupingTest"/>
+        <method signature="GroupingTest.Riksaw()[pri:0, instance:TestNgExample.GroupingTest@65c7a252]" name="Riksaw" class="TestNgExample.GroupingTest"/>
+      </group> <!-- 3Wheeler -->
+      <group name="Sedan">
+        <method signature="GroupingTest.sedan()[pri:0, instance:TestNgExample.GroupingTest@65c7a252]" name="sedan" class="TestNgExample.GroupingTest"/>
+      </group> <!-- Sedan -->
     </groups>
-    <test started-at="2024-02-02T07:08:03 GMT" name="Default test" finished-at="2024-02-02T07:08:08 GMT" duration-ms="4670">
+    <test started-at="2024-02-05T05:56:50 GMT" name="Groupingttest" finished-at="2024-02-05T05:57:01 GMT" duration-ms="11649">
       <class name="TestNgExample.RegistrationTesr">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:TestNgExample.RegistrationTesr@3012646b]" started-at="2024-02-02T07:08:03 GMT" name="OpenBrowser" finished-at="2024-02-02T07:08:06 GMT" duration-ms="2316" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:TestNgExample.RegistrationTesr@27406a17]" started-at="2024-02-05T05:56:50 GMT" name="OpenBrowser" finished-at="2024-02-05T05:56:59 GMT" duration-ms="9263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="Validatepage()[pri:0, instance:TestNgExample.RegistrationTesr@3012646b]" started-at="2024-02-02T07:08:06 GMT" name="Validatepage" finished-at="2024-02-02T07:08:07 GMT" duration-ms="1775" status="PASS">
+        <test-method signature="Validatepage()[pri:0, instance:TestNgExample.RegistrationTesr@27406a17]" started-at="2024-02-05T05:56:59 GMT" name="Validatepage" finished-at="2024-02-05T05:57:01 GMT" duration-ms="1748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validatepage -->
-        <test-method signature="validatename()[pri:0, instance:TestNgExample.RegistrationTesr@3012646b]" started-at="2024-02-02T07:08:07 GMT" name="validatename" finished-at="2024-02-02T07:08:08 GMT" duration-ms="314" status="FAIL">
+        <test-method signature="validatename()[pri:0, instance:TestNgExample.RegistrationTesr@27406a17]" started-at="2024-02-05T05:57:01 GMT" name="validatename" finished-at="2024-02-05T05:57:01 GMT" duration-ms="239" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Error in comparing value
@@ -60,11 +72,83 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatename -->
-        <test-method is-config="true" signature="BrowserClose()[pri:0, instance:TestNgExample.RegistrationTesr@3012646b]" started-at="2024-02-02T07:08:08 GMT" name="BrowserClose" finished-at="2024-02-02T07:08:08 GMT" duration-ms="214" status="PASS">
+        <test-method is-config="true" signature="BrowserClose()[pri:0, instance:TestNgExample.RegistrationTesr@27406a17]" started-at="2024-02-05T05:57:01 GMT" name="BrowserClose" finished-at="2024-02-05T05:57:01 GMT" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserClose -->
       </class> <!-- TestNgExample.RegistrationTesr -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="TestNgExample.GroupingTest">
+        <test-method signature="AutoRiksaw()[pri:0, instance:TestNgExample.GroupingTest@65c7a252]" started-at="2024-02-05T05:56:50 GMT" name="AutoRiksaw" finished-at="2024-02-05T05:56:50 GMT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AutoRiksaw -->
+        <test-method signature="Riksaw()[pri:0, instance:TestNgExample.GroupingTest@65c7a252]" started-at="2024-02-05T05:56:50 GMT" name="Riksaw" finished-at="2024-02-05T05:56:50 GMT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Riksaw -->
+        <test-method signature="car1()[pri:0, instance:TestNgExample.GroupingTest@65c7a252]" started-at="2024-02-05T05:56:50 GMT" name="car1" finished-at="2024-02-05T05:56:50 GMT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- car1 -->
+        <test-method signature="car3()[pri:0, instance:TestNgExample.GroupingTest@65c7a252]" started-at="2024-02-05T05:56:50 GMT" name="car3" finished-at="2024-02-05T05:56:50 GMT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- car3 -->
+        <test-method signature="sedan()[pri:0, instance:TestNgExample.GroupingTest@65c7a252]" started-at="2024-02-05T05:56:50 GMT" name="sedan" finished-at="2024-02-05T05:56:50 GMT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sedan -->
+      </class> <!-- TestNgExample.GroupingTest -->
+      <class name="TestNgExample.TestNgAnnotation">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:TestNgExample.TestNgAnnotation@563f38c4]" started-at="2024-02-05T05:56:50 GMT" name="BeforeSuite" finished-at="2024-02-05T05:56:50 GMT" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method is-config="true" signature="BeforeTest()[pri:0, instance:TestNgExample.TestNgAnnotation@563f38c4]" started-at="2024-02-05T05:56:50 GMT" name="BeforeTest" finished-at="2024-02-05T05:56:50 GMT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:TestNgExample.TestNgAnnotation@563f38c4]" started-at="2024-02-05T05:57:01 GMT" name="BeforeClass" finished-at="2024-02-05T05:57:01 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:TestNgExample.TestNgAnnotation@563f38c4]" started-at="2024-02-05T05:57:01 GMT" name="BeforeMethod" finished-at="2024-02-05T05:57:01 GMT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="Testcase3()[pri:-1, instance:TestNgExample.TestNgAnnotation@563f38c4]" started-at="2024-02-05T05:57:01 GMT" name="Testcase3" finished-at="2024-02-05T05:57:01 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase3 -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:TestNgExample.TestNgAnnotation@563f38c4]" started-at="2024-02-05T05:57:01 GMT" name="AfterMethod" finished-at="2024-02-05T05:57:01 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:TestNgExample.TestNgAnnotation@563f38c4]" started-at="2024-02-05T05:57:01 GMT" name="BeforeMethod" finished-at="2024-02-05T05:57:01 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="testcase1()[pri:0, instance:TestNgExample.TestNgAnnotation@563f38c4]" started-at="2024-02-05T05:57:01 GMT" name="testcase1" finished-at="2024-02-05T05:57:01 GMT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:TestNgExample.TestNgAnnotation@563f38c4]" started-at="2024-02-05T05:57:01 GMT" name="AfterMethod" finished-at="2024-02-05T05:57:01 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:TestNgExample.TestNgAnnotation@563f38c4]" started-at="2024-02-05T05:57:01 GMT" name="AfterClass" finished-at="2024-02-05T05:57:01 GMT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+        <test-method is-config="true" signature="AfterTest()[pri:0, instance:TestNgExample.TestNgAnnotation@563f38c4]" started-at="2024-02-05T05:57:01 GMT" name="AfterTest" finished-at="2024-02-05T05:57:01 GMT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:TestNgExample.TestNgAnnotation@563f38c4]" started-at="2024-02-05T05:57:01 GMT" name="AfterSuite" finished-at="2024-02-05T05:57:01 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuite -->
+      </class> <!-- TestNgExample.TestNgAnnotation -->
+    </test> <!-- Groupingttest -->
+  </suite> <!-- Grouping -->
 </testng-results>
