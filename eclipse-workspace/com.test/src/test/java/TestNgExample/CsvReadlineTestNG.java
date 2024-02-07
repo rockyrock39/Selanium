@@ -4,15 +4,18 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.pageloader.GoogleSearchPageFactory;
 
 import utilities.ReadFromcsvfrTestNg;
 
 public class CsvReadlineTestNG {
 	
-	WebDriver driver;	
+	WebDriver 	driver;
 	
 @DataProvider(name="csvfile")
 public Object[][] ReadFile() throws IOException {
@@ -25,9 +28,10 @@ public Object[][] ReadFile() throws IOException {
 @Test(dataProvider="csvfile")
 public void testCase1 (String name,String email,String l,String la)
 {
-	System.out.println("name" + name);
-	System.out.println("email" + email);
+	GoogleSearchPageFactory search = new GoogleSearchPageFactory(driver);
 	
+	search.NevigateGooglepage();
+	search.typeSearchword(name);
 }
 
 @BeforeTest
@@ -36,4 +40,9 @@ public void setup()
 driver = new ChromeDriver();	
 }
 
+@AfterTest
+public void closeBrowser()
+{
+	driver.quit();
+}
 }
