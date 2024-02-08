@@ -30,17 +30,8 @@ public class ExtentReportTestNG {
 	WebDriver 	driver;
 	ExtentTest test;
 	ExtentReports extent;
-	
-@DataProvider(name="csvfile")
-public Object[][] ReadFile() throws IOException {
-	// TODO Auto-generated method stub
-	ReadFromcsvfrTestNg lReadFromcsvfrTestNg = new ReadFromcsvfrTestNg();
-	Object[][] read=lReadFromcsvfrTestNg.readCsvFile("csvfile.csv");
-	return read;
-
-}
-@Test(dataProvider="csvfile")
-public void testCase1 (String name,String email,String l,String la)
+@Test
+public void testCase1 ()
 {
 test= extent.createTest("Google test","Verify Serach functionallity");
 	driver.get("https://google.com");
@@ -67,6 +58,7 @@ public void testListeners(ITestResult result) throws IOException
 	{
 		test.log(Status.PASS, "Test pass");
 	}
+	driver.quit();
 	
 }
 
@@ -80,8 +72,8 @@ public void setup()
 }
 
 @AfterTest
-public void closeBrowser()
+public void FlushReport()
 {
-	
+	extent.flush();
 }
 }

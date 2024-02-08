@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.user2.Remotetest">
+      <class name="TestNgExample.ExtentReportTestNG">
         <methods>
-          <include name="getRemote"/>
+          <include name="closeBrowser"/>
+          <include name="testCase1"/>
+          <include name="testListeners"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.user2.Remotetest -->
+      </class> <!-- TestNgExample.ExtentReportTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

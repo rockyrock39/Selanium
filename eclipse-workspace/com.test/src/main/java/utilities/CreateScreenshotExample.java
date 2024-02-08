@@ -31,9 +31,12 @@ public class CreateScreenshotExample {
 		//elemet.sendKeys(Keys.ENTER);
 		File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		String Destination = "./Screenshot/"+Name+"_"+timestamp+".png";
-		/*
-		 * try { //FileUtils.copyFile(file, Destination); } catch (IOException e) { //
-		 * TODO Auto-generated catch block e.printStackTrace(); }
+		try {
+			FileUtils.copyFile(file, new File(Destination));
+		} catch (IOException e) {
+			e.printStackTrace();
+		} //
+		 /* TODO Auto-generated catch block e.printStackTrace(); }
 		 */
 		//driver.quit();
 		return Destination;
