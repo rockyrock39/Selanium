@@ -20,24 +20,22 @@ public class CreateScreenshotExample {
 		String timestamp=new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 		//WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		driver.get("https://www.google.com/");
+		//JavascriptExecutor js = (JavascriptExecutor) driver;
+		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		//driver.get("https://www.google.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		
-		WebElement elemet = driver.findElement(By.id("APjFqb"));
+		//WebElement elemet = driver.findElement(By.id("APjFqb"));
 		
-		elemet.sendKeys("Rahul");
-		elemet.sendKeys(Keys.ENTER);
+		//elemet.sendKeys("Rahul");
+		//elemet.sendKeys(Keys.ENTER);
 		File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		String Destination = "./Screenshot/"+Name+"_"+timestamp+".png";
-		try {
-			FileUtils.copyFile(file, new File("google.png"));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		driver.quit();
+		/*
+		 * try { //FileUtils.copyFile(file, Destination); } catch (IOException e) { //
+		 * TODO Auto-generated catch block e.printStackTrace(); }
+		 */
+		//driver.quit();
 		return Destination;
 	}
 	

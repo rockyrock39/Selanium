@@ -22,3 +22,5 @@ https://advantageonlineshopping.com/#/
 https://www.swtestacademy.com
 
 https://www.swtestacademy.com/extent-reports-in-selenium-with-testng/
+
+java -jar selenium-server-4.17.0.jar standalone
