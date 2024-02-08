@@ -25,7 +25,7 @@ public class Remotetest {
 		WebDriver driver = null;
 
 		try {
-			driver = new RemoteWebDriver(URI.create("http://localhost:4444/").toURL(), caps);
+			driver = new RemoteWebDriver(URI.create("http://localhost:7777/").toURL(), caps);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

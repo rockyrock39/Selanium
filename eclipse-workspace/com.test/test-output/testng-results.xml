@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-08T06:19:17 GMT" name="Default suite" finished-at="2024-02-08T06:19:23 GMT" duration-ms="6008">
+  <suite started-at="2024-02-08T07:29:34 GMT" name="Default suite" finished-at="2024-02-08T07:29:41 GMT" duration-ms="6885">
     <groups>
     </groups>
-    <test started-at="2024-02-08T06:19:17 GMT" name="Default test" finished-at="2024-02-08T06:19:23 GMT" duration-ms="6008">
+    <test started-at="2024-02-08T07:29:34 GMT" name="Default test" finished-at="2024-02-08T07:29:41 GMT" duration-ms="6885">
       <class name="com.user2.Remotetest">
-        <test-method signature="getRemote()[pri:0, instance:com.user2.Remotetest@534a5a98]" started-at="2024-02-08T06:19:17 GMT" name="getRemote" finished-at="2024-02-08T06:19:23 GMT" duration-ms="5941" status="PASS">
+        <test-method signature="getRemote()[pri:0, instance:com.user2.Remotetest@5a45133e]" started-at="2024-02-08T07:29:34 GMT" name="getRemote" finished-at="2024-02-08T07:29:41 GMT" duration-ms="6812" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getRemote -->
