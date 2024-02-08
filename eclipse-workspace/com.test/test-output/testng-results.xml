@@ -1,69 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-07T07:02:56 GMT" name="Default suite" finished-at="2024-02-07T07:03:03 GMT" duration-ms="7054">
+  <suite started-at="2024-02-08T04:48:26 GMT" name="Default suite" finished-at="2024-02-08T04:48:32 GMT" duration-ms="6817">
     <groups>
     </groups>
-    <test started-at="2024-02-07T07:02:56 GMT" name="Default test" finished-at="2024-02-07T07:03:03 GMT" duration-ms="7054">
-      <class name="TestNgExample.CsvReadlineTestNG">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestNgExample.CsvReadlineTestNG@5d0bf09b]" started-at="2024-02-07T07:02:56 GMT" name="setup" finished-at="2024-02-07T07:02:58 GMT" duration-ms="2673" status="PASS">
+    <test started-at="2024-02-08T04:48:26 GMT" name="Default test" finished-at="2024-02-08T04:48:32 GMT" duration-ms="6817">
+      <class name="TestNgExample.Screenshot">
+        <test-method signature="getScreenShot()[pri:0, instance:TestNgExample.Screenshot@3527942a]" started-at="2024-02-08T04:48:26 GMT" name="getScreenShot" finished-at="2024-02-08T04:48:32 GMT" duration-ms="6747" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCase1(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestNgExample.CsvReadlineTestNG@5d0bf09b]" started-at="2024-02-07T07:02:58 GMT" name="testCase1" data-provider="csvfile" finished-at="2024-02-07T07:03:01 GMT" duration-ms="2507" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Rahul]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[rg@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase1 -->
-        <test-method signature="testCase1(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestNgExample.CsvReadlineTestNG@5d0bf09b]" started-at="2024-02-07T07:03:01 GMT" name="testCase1" data-provider="csvfile" finished-at="2024-02-07T07:03:03 GMT" duration-ms="1811" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Rahul]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[rg@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase1 -->
-      </class> <!-- TestNgExample.CsvReadlineTestNG -->
+        </test-method> <!-- getScreenShot -->
+      </class> <!-- TestNgExample.Screenshot -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
