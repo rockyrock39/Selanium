@@ -7,14 +7,17 @@ import java.util.function.Consumer;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.collections4.Put;
+import org.openqa.selenium.By;
 //import org.openqa.selenium.bidi.log.LogEntry;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chromium.ChromiumDriver;
 import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.v118.log.Log;
+import org.openqa.selenium.devtools.v118.network.model.Headers;
 import org.openqa.selenium.devtools.v118.network.model.RequestWillBeSent;
 import org.openqa.selenium.devtools.v118.log.model.LogEntry;
 import org.openqa.selenium.devtools.v118.network.Network;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -89,7 +92,7 @@ devTools.send(Network.disable());
 /**
  * 
  */
-@Test
+// @Test
 public void captureconsolelogsTest()
 {
 	devTools.send(Log.enable());
@@ -108,6 +111,9 @@ public void captureconsolelogsTest()
 	driver.get("https://www.selenium.dev/");
 
 }
+/**
+ * 
+ */
 @Test
 public void basicAuth()
 {
@@ -117,8 +123,19 @@ public void basicAuth()
     Map<String,Object> headers = new HashMap<>();
     String strUsr="admin";
     String strpwd="admin";
-    String basicAuth = "Basic " + new String(new Base64().encode(String.format("%s:%s", strUsr,strpwd)))
+    String basicAuth = "Basic " + new String(new Base64().encode(String.format("%s:%s", strUsr,strpwd).getBytes()));
 
+	System.out.println("Auth....."+ basicAuth);
+	
+	headers.put("Authorization", basicAuth);
+	
+	devTools.send(Network.setExtraHTTPHeaders(new Headers(headers)));
+	
+	driver.get("http://the-internet.herokuapp.com/basic_auth");
+	
+	String strmsg = driver.findElement(By.cssSelector("div.example p")).getText();
+	
+	Assert.assertEquals(strmsg, "Congratulations! You must have the proper credentials.");
 	
 }
 

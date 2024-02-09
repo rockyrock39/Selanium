@@ -6,7 +6,7 @@
       <class name="com.user2.CPDTest">
         <methods>
           <include name="setup"/>
-          <include name="deviceModeTest"/>
+          <include name="basicAuth"/>
         </methods>
       </class> <!-- com.user2.CPDTest -->
     </classes>
