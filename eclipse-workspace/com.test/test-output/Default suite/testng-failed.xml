@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNgExample.ExtentReportTestNG">
+      <class name="com.user2.CPDTest">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="testCase1"/>
-          <include name="testListeners"/>
           <include name="setup"/>
+          <include name="deviceModeTest"/>
         </methods>
-      </class> <!-- TestNgExample.ExtentReportTestNG -->
+      </class> <!-- com.user2.CPDTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
