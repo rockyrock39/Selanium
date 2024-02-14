@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 14 05:31:16 GMT 2024</td>
+<td>Started on:</td><td>Wed Feb 14 07:02:17 GMT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>6 seconds (6448 ms)</td>
+<tr><td>Total time:</td><td>67 seconds (67920 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,35 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.testCase1Runner.runScenario()'><b>runScenario</b><br>Test class: runner.testCase1Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search single item", "Place Order"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at stepDefinations.TestCase1stepDefination.item_must_be_listed(TestCase1stepDefination.java:95)
+	at ?.Item must be listed(file:///C:/Users/Administrator/Documents/GitHub/Selanium/CucumberTestCase2/src/test/resources/features/testcase1.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1304065853", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1304065853'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at stepDefinations.TestCase1stepDefination.item_must_be_listed(TestCase1stepDefination.java:95)
+	at ?.Item must be listed(file:///C:/Users/Administrator/Documents/GitHub/Selanium/CucumberTestCase2/src/test/resources/features/testcase1.feature:10)
+</pre></div></td>
+<td>35</td>
+<td>runner.testCase1Runner@78e4deb0</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,17 +105,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.testCase1Runner.runScenario()'><b>runScenario</b><br>Test class: runner.testCase1Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Checkout Order", "Place Order"</td>
-<td></td>
-<td>0</td>
-<td>runner.testCase1Runner@78e4deb0</td></tr>
-<tr>
-<td title='runner.testCase1Runner.runScenario()'><b>runScenario</b><br>Test class: runner.testCase1Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search single item", "Place Order"</td>
-<td></td>
-<td>4</td>
-<td>runner.testCase1Runner@78e4deb0</td></tr>
-<tr>
 <td title='runner.testCase1Runner.runScenario()'><b>runScenario</b><br>Test class: runner.testCase1Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add item to cart", "Place Order"</td>
+<td></td>
+<td>30</td>
+<td>runner.testCase1Runner@78e4deb0</td></tr>
+<tr>
+<td title='runner.testCase1Runner.runScenario()'><b>runScenario</b><br>Test class: runner.testCase1Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Checkout Order", "Place Order"</td>
 <td></td>
 <td>0</td>
 <td>runner.testCase1Runner@78e4deb0</td></tr>

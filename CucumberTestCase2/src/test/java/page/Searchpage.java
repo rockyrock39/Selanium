@@ -19,6 +19,12 @@ public class Searchpage {
 	WebElement itemlisted;
 	@FindBy(how = How.XPATH, using = "//a/i[@class='fa fa-shopping-cart']")
 	WebElement shoppingcart;
+	@FindBy(how = How.CSS, using = "input[placeholder=\"Search\"]")
+	WebElement searchbar;
+	@FindBy(how = How.CSS, using = "button[class=\"btn btn-default btn-lg\"]")
+	WebElement searchbutton;
+	@FindAll(@FindBy(how = How.XPATH, using = "//form/div/table/tbody/tr/td[@class=\"text-left\"]/a"))
+	List<WebElement> list;
 	
 	
 	
@@ -30,8 +36,8 @@ public class Searchpage {
 
 	}
 
-	public String vewitemsdetails() {
-		return itemlisted.getText();
+	public List<WebElement> vewitemsdetails() {
+		return list;
 	}
 
 	public boolean isButtonenable() {
@@ -59,6 +65,19 @@ public class Searchpage {
 	public void backtoNormal()
 	{
 		js.executeScript("document.body.style.zoom = '1'");
+	}
+	public void sendSearchData(String name) {
+		if (!name.isEmpty()) {
+			searchbar.clear();
+			searchbar.sendKeys(name);
+
+		}
+	}
+
+	public void searchbutton() {
+
+		searchbutton.click();
+
 	}
 
 }

@@ -55,7 +55,7 @@ public class TestBase {
 	{
 		if (driver != null)
 		{
-			driver.close();
+			//driver.close();
 			driver.quit();
 		}
 		testbase=null;

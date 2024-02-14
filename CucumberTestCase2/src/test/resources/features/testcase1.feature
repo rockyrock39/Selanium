@@ -3,7 +3,10 @@ Feature: Place Order
 @first
   Scenario: Search single item
   	Given User is on Home page
-  	When User Search an item "MacBook Air"
+  	When User Search an item
+  	|items|
+  	|MacBook Air|
+  	|iPhone|
   	Then  Item must be listed
 
   Scenario: Add item to cart
